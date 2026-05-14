@@ -1,0 +1,108 @@
+body {
+    background-color: #343541;
+    color: #ececf1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-container {
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #202123;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    overflow: hidden;
+}
+
+#chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #202123;
+}
+
+#chat-window::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-window::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.message {
+    padding: 12px 20px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.user-msg {
+    background-color: #10a37f;
+    align-self: flex-end;
+    color: white;
+    box-shadow: 0 2px 8px rgba(16,163,127,0.5);
+    border-bottom-right-radius: 2px;
+}
+
+.bot-msg {
+    background-color: #444654;
+    align-self: flex-start;
+    color: #ddd;
+    box-shadow: 0 2px 8px rgba(68,70,84,0.5);
+    border-bottom-left-radius: 2px;
+}
+
+.input-area {
+    display: flex;
+    padding: 15px 20px;
+    gap: 12px;
+    background-color: #2a2a2e;
+}
+
+input#chat-input {
+    flex: 1;
+    background-color: #40414f;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: white;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+input#chat-input:focus {
+    background-color: #50515a;
+}
+
+button#send-btn {
+    background-color: #10a37f;
+    border: none;
+    border-radius: 12px;
+    padding: 0 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(16,163,127,0.6);
+}
+
+button#send-btn:hover {
+    background-color: #0e7a68;
+    box-shadow: 0 6px 12px rgba(14,122,104,0.8);
+}
