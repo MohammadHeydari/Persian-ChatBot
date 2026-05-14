@@ -1,6 +1,8 @@
 ## Persian RAG Chatbot
 A Persian-language chatbot powered by Retrieval‑Augmented Generation (RAG) using FastAPI, SentenceTransformers, SQLite, and local LLMs via Ollama, with streaming responses (SSE) and a simple web UI.
 
+![Chat UI](images/image.png)
+
 ### Features
 - Persian language support
 - Semantic search with Sentence Embeddings
